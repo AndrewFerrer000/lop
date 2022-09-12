@@ -1,5 +1,5 @@
 <template>
-    <div class="article-box">
+    <div class="article-box block-content">
         <div class="title-section">
             <h1><span>Live reporting</span></h1>
         </div>
@@ -35,7 +35,7 @@
                             <img alt="" src="@/assets/images/instagram-img2.jpg"
                                 style="position: relative;  filter: brightness(50%);">
                             <div class=" hide-on-desktop">
-                                <h4 style="position: absolute; left: 10px; bottom: 10px; color: white;">
+                                <h4 class="fa-bold" style="position: absolute; left: 10px; bottom: 10px; color: white;">
                                     Lights Out!
                                     Jeff Platt
                                     Wins MSPT

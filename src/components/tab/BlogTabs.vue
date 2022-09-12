@@ -2,34 +2,31 @@
     <div class="sidebar">
         <div class="widget tab-posts-widget">
             <ul class="nav nav-tabs" id="myTab">
-                <slot name="tab-links">
-                    <!-- DEFAULT TAB LINKS-->
-                    <li class="active">
-                        <a href="#live" data-toggle="tab">Live Events</a>
-                    </li>
-                    <li>
-                        <a href="#chipcounts" data-toggle="tab">Chip Counts</a>
-                    </li>
-                    <li>
-                        <a href="#gallery" data-toggle="tab">Gallery</a>
-                    </li>
-                    <li>
-                        <a href="#videos" data-toggle="tab">Videos</a>
-                    </li>
-                    <li>
-                        <a href="#payouts" data-toggle="tab">Payouts</a>
-                    </li>
-                    <li>
-                        <a href="#whatsapp" data-toggle="tab">Whatsapp</a>
-                    </li>
-                </slot>
+                <li class="active">
+                    <a href="#live" data-toggle="tab">Live Events</a>
+                </li>
+                <li>
+                    <a href="#chipcounts" data-toggle="tab">Chip Counts</a>
+                </li>
+                <li>
+                    <a href="#gallery" data-toggle="tab">Gallery</a>
+                </li>
+                <li>
+                    <a href="#videos" data-toggle="tab">Videos</a>
+                </li>
+                <li>
+                    <a href="#payouts" data-toggle="tab">Payouts</a>
+                </li>
+                <li>
+                    <a href="#whatsapp" data-toggle="tab">Whatsapp</a>
+                </li>
             </ul>
             <div class="tab-content">
                 <div class="tab-pane active" id="live">
                     <div>
-                        <div class="single-post-box">
+                        <div class="single-post-box news-post article-post">
                             <div class="title-post">
-                                <h1 class="link-header"><a href="#">Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. </a></h1>
+                                <h1><a class="text-primary" href="#">Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. </a></h1>
                                 <ul class="post-tags">
                                     <li><i class="fa fa-clock-o"></i>27 may 2013 &nbsp;<i class="fa fa-user"></i>by <a href="#">John Doe</a></li>
                                     <li></li>
@@ -38,9 +35,9 @@
                             <div class="share-post-box">
                                 <ul class="share-box">
                                     <li><i class="fa fa-share-alt"></i><span>Share Post</span></li>
-                                    <li><a class="facebook" href="#"><i class="fa fa-facebook"></i><span>Facebook</span></a></li>
-                                    <li><a class="twitter" href="#"><i class="fa fa-twitter"></i><span>Twitter</span></a></li>
-                                    <li><a class="facebook" href="#"><i class="fa fa-twitter"></i><span>Whatsapp</span></a></li>
+                                    <li><a class="facebook" href="#"><i class="fa fa-facebook"></i><span>Share on Facebook</span></a></li>
+                                    <li><a class="twitter" href="#"><i class="fa fa-twitter"></i><span>Share on Twitter</span></a></li>
+                                    <li><a class="facebook" href="#"><i class="fa fa-facebook"></i><span>Share on Whatsapp</span></a></li>
                                 </ul>
                             </div>
                             <div class="post-gallery">
@@ -61,9 +58,9 @@
                             </div>
                         </div>
 
-                        <div class="single-post-box">
+                        <div class="single-post-box news-post article-post">
                             <div class="title-post">
-                                <h1><a href="#">Taking a break</a></h1>
+                                <h1><a href="#" class="text-primary">Taking a break</a></h1>
                                 <ul class="post-tags">
                                     <li><i class="fa fa-clock-o"></i>27 may 2013 &nbsp;<i class="fa fa-user"></i>by <a href="#">John Doe</a></li>
                                     <li></li>
@@ -80,6 +77,30 @@
                             <div class="post-content">
                                 <p>The remaining 102 players is taking a 5 minutes break.</p>
                             </div>
+                            <CustomeTable>
+                                <template v-slot:table-head>
+                                    <tr class="text-primary">
+                                        <th>PLAYER</th>
+                                        <th class="text-center">FLAG</th>
+                                        <th class="text-right">CHIPS TOTAL</th>
+                                        <th class="text-right">CHIPS PROGRESS</th>
+                                    </tr>
+                                </template>
+                                <template v-slot:table-body>
+                                    <tr>
+                                        <td>Andrew ”KittyXoXo” Gonder</td>
+                                        <td class="text-center">us-flag</td>
+                                        <td class="text-right">4,814,321</td>
+                                        <td class="text-right">2,040,123 <i class="text-green fa fa-caret-up" aria-hidden="true"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Andrew ”KittyXoXo” Gonder</td>
+                                        <td class="text-center">uk-flag</td>
+                                        <td class="text-right">4,814,321</td>
+                                        <td class="text-right">2,040,123 <i class="text-red fa fa-caret-down" aria-hidden="true"></i></td>
+                                    </tr>
+                                </template>
+                            </CustomeTable>
                         </div>
 
                         <div class="level-notice forum-table single-topic">
@@ -92,7 +113,33 @@
 
                 <div class="tab-pane" id="chipcounts">
                     <div class="single-post-box">
-                        
+                        <CustomeTable>
+                            <template v-slot:table-head>
+                                <tr class="text-primary">
+                                    <th class="text-center">RANK</th>
+                                    <th>PLAYER</th>
+                                    <th class="text-center">FLAG</th>
+                                    <th class="text-right">CHIPS TOTAL</th>
+                                    <th class="text-right">CHIPS PROGRESS</th>
+                                </tr>
+                            </template>
+                            <template v-slot:table-body>
+                                <tr>
+                                    <td class="text-center">1</td>
+                                    <td>Andrew ”KittyXoXo” Gonder</td>
+                                    <td class="text-center">us-flag</td>
+                                    <td class="text-right">4,814,321</td>
+                                    <td class="text-right">2,040,123 <i class="text-green fa fa-caret-up" aria-hidden="true"></i></td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">2</td>
+                                    <td>Andrew ”KittyXoXo” Gonder</td>
+                                    <td class="text-center">uk-flag</td>
+                                    <td class="text-right">4,814,321</td>
+                                    <td class="text-right">2,040,123 <i class="text-red fa fa-caret-down" aria-hidden="true"></i></td>
+                                </tr>
+                            </template>
+                        </CustomeTable>
                     </div>
                 </div>
 
@@ -109,9 +156,38 @@
                 <div class="tab-pane" id="videos">
                     <p>VIDEOS</p>
                 </div>
+
                 <div class="tab-pane" id="payouts">
-                    <p>PAYOUTS</p>
+                    <div class="single-post-box">
+                        <CustomeTable>
+                            <template v-slot:table-head>
+                                <tr class="text-primary">
+                                    <th class="text-center">PLACE</th>
+                                    <th>WINNER</th>
+                                    <th class="text-right">PRIZE</th>
+                                </tr>
+                            </template>
+                            <template v-slot:table-body>
+                                <tr>
+                                    <td class="text-center">1</td>
+                                    <td>Andrew ”KittyXoXo” Gonder</td>
+                                    <td class="text-right">$64,590</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">2</td>
+                                    <td>Andrew ”KittyXoXo” Gonder</td>
+                                    <td class="text-right">$64,590</td>
+                                </tr>
+                                <tr v-for="index in indexs = 8" :key="index">
+                                    <td class="text-center">{{index + 2}}</td>
+                                    <td></td>
+                                    <td class="text-right">$1,000</td>
+                                </tr>
+                            </template>
+                        </CustomeTable>
+                    </div>
                 </div>
+
                 <div class="tab-pane" id="whatsapp">
                     <p>WHATSAPP</p>
                 </div>
@@ -120,7 +196,16 @@
     </div>
 </template>
 
+<script setup>
+import CustomeTable from '@/components/CustomeTable.vue'
+</script>
+
 <style scoped>
+
+.post-gallery {
+    padding: 0px 20px;
+}
+
 .single-post-box{
     margin: 20px 0px 20px 0px;
 }

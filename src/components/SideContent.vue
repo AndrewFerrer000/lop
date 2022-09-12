@@ -1,21 +1,19 @@
 <template>
     <!-- STAY CONNECTED -->
     <div class="sidebar">
-        <div class="widget social-widget">
+        <div class="single-post-box">
             <div class="title-section">
                 <h1><span>Stay Connected</span></h1>
             </div>
-
-            <button class="social-btn instagram"><i class="fa fa-instagram" aria-hidden="true"></i>
-                Instagram</button>
-
-            <button class="social-btn twitter"><i class="fa fa-twitter" aria-hidden="true"></i>
-                Twitter</button>
-
-            <button class="social-btn facebook"><i class="fa fa-facebook" aria-hidden="true"></i>
-                Facebook</button>
-
+             <div class="share-post-box">
+                <ul class="share-box">
+                    <li><a class="facebook" href="#"><i class="fa fa-facebook"></i><span>Facebook</span></a></li>
+                    <li><a class="instagram" href="#"><i class="fa fa-instagram"></i><span>Instagram</span></a></li>
+                    <li><a class="twitter" href="#"><i class="fa fa-twitter"></i><span>Twitter</span></a></li>
+                </ul>
+            </div>
         </div>
+       
         <!-- EVENTS -->
         <div class="article-box">
 
@@ -163,3 +161,9 @@
     </div>
     <!-- End sidebar -->
 </template>
+
+<style scoped>
+.single-post-box .share-post-box {
+    padding: 0px 0px 20px 0px;
+}
+</style>

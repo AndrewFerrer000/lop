@@ -1,11 +1,9 @@
 <template>
     <div class="block-content">
         <div class="title-section">
-            <h1><span><a href="#">2022 WSOP Online</a></span></h1>
+            <h1><span><a href="#" class="text-primary">2022 WSOP Online</a></span></h1>
         </div>
         <BlogTabs></BlogTabs>
-        
-        <!-- End single-post box -->
     </div>
 </template>
 
