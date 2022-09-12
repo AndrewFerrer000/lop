@@ -88,7 +88,9 @@
                                 </template>
                                 <template v-slot:table-body>
                                     <tr>
-                                        <td>Andrew ”KittyXoXo” Gonder</td>
+                                        <td>
+                                            <p>Andrew ”KittyXoXo” Gonder</p>
+                                        </td>
                                         <td class="text-center">us-flag</td>
                                         <td class="text-right">4,814,321</td>
                                         <td class="text-right">2,040,123 <i class="text-green fa fa-caret-up" aria-hidden="true"></i></td>

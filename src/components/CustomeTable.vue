@@ -1,11 +1,17 @@
 <template>
-    <table class="c-table">
-        <slot name="table-head"></slot>
-        <slot name="table-body"></slot>
-    </table>
+    <div class=" table-responsive py-5">
+        <table class="c-table table">
+            <slot name="table-head"></slot>
+            <slot name="table-body"></slot>
+        </table>
+    </div>
 </template>
 
 <style>
+.table-responsive {
+    border: unset;
+}
+
 .c-table {
     width: 100%;
 }
@@ -15,8 +21,11 @@
     border: 1px solid #95a5a6;
 }
 
-.c-table tr th,
+.c-table tr th {
+    padding: 10px 20px;
+}
+
 .c-table tr td {
-    padding: 20px 20px;
+    padding: 10px 20px;
 }
 </style>
