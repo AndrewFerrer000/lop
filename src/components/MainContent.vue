@@ -3,13 +3,13 @@
         <div class="container">
             <div class="row">
                 <!-- MAIN -->
-                <div class="col-sm-8">
+                <div class="col-lg-8">
                     <router-view></router-view>
                 </div>
                 <!-- END OF MAIN -->
 
                 <!-- SIDE BAR -->
-                <div class="col-sm-4">
+                <div class="col-lg-4">
                     <SideContent />
                 </div>
             </div>

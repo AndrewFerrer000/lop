@@ -7,72 +7,54 @@
             </div>
         </div>
 
-        <DefaultTab>
-            <template v-slot:tab-items>
-                <div class="forum-table">
-                    <div class="table-head">
-                        <div class="first-col"><a href="#">MARRAKECH POKER OPEN 2022 Marrakech Poker Open</a></div>
-                        <div class="second-col"><span>TOPICS / POSTS</span></div>
-                        <div class="third-col"><span>Freshness</span></div>
-                    </div>
-                    <div class="table-row">
-                        <div class="first-col">
-                            <h2><a href="#">Getting Started</a></h2>
-                            <p>Phasellus lacinia, magna a ullamcorper laoreet, lectus arcu pulvinar risus, vitae facilisis libero dolor a purus. </p>
-                        </div>
-                        <div class="second-col">
-                            <p><span>3</span> Topics</p>
-                            <p><span>6</span> Posts</p>
-                        </div>
-                        <div class="third-col">
-                            <img src="upload/users/avatar7.jpg" alt="">
-                            <div class="post-autor-date">
-                                <p>by <a href="#">John</a></p>
-                                <p>1 year, 1 month ago</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="table-row">
-                        <div class="first-col">
-                            <h2><a href="#">Web Design</a></h2>
-                            <p>Phasellus lacinia, magna a ullamcorper laoreet, lectus arcu pulvinar risus, vitae facilisis libero dolor a purus. </p>
-                        </div>
-                        <div class="second-col">
-                            <p><span>2</span> Topics</p>
-                            <p><span>3</span> Posts</p>
-                        </div>
-                        <div class="third-col">
-                            <img src="upload/users/avatar5.jpg" alt="">
-                            <div class="post-autor-date">
-                                <p>by <a href="#">admin</a></p>
-                                <p>1 year, 1 month ago</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="table-row">
-                        <div class="first-col">
-                            <h2><a href="#">Off Topics</a></h2>
-                            <p>Phasellus lacinia, magna a ullamcorper laoreet, lectus arcu pulvinar risus, vitae facilisis libero dolor a purus. </p>
-                        </div>
-                        <div class="second-col">
-                            <p><span>1</span> Topics</p>
-                            <p><span>2</span> Posts</p>
-                        </div>
-                        <div class="third-col">
-                            <img src="upload/users/avatar7.jpg" alt="">
-                            <div class="post-autor-date">
-                                <p>by <a href="#">John</a></p>
-                                <p>1 year, 1 month ago</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </template>
-        </DefaultTab>
+        <EventTabs></EventTabs>
         <!-- End forum box -->
     </div>
 </template>
 
 <script setup>
-import DefaultTab from '@/components/tab/DefaultTab';
+import EventTabs from '@/components/tab/EventTabs';
 </script>
+
+<style scoped>
+.subevent{
+    margin: 0px 15px 15px 15px;
+    box-shadow: 0px 0px 1px black;
+}
+
+.post-header {
+    background: #2D3436;
+    padding-top: 15px;
+    margin: 0px 15px 15px 15px;
+}
+
+.post-header h2 {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.post-content {
+    color: white;
+}
+
+.event-status {
+    font-weight: 800;
+    font-style: normal;
+}
+
+.live {
+    color: #e74c3c;
+}   
+
+.finished {
+    color: #2ecc71;
+}
+
+.post-tags {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+</style>

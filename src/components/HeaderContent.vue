@@ -40,30 +40,30 @@
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav navbar-left">
 
-                            <li class="drop"><a class="home" href="index.html">News & info</a>
+                            <li class="drop"><a class="home" href="#">News & info</a>
 
                                 <ul class="dropdown">
-                                    <li><a href="index.html">Live poker rooms</a></li>
-                                    <li><a href="home2.html">Online poker rooms</a></li>
-                                    <li><a href="home3.html">Poker tours</a></li>
-                                    <li><a href="home4.html">Podcasts</a></li>
-                                    <li><a href="home5.html">Videos</a></li>
-                                    <li><a href="home6.html">Promotions</a></li>
-                                    <li><a href="home6.html">Contact</a></li>
+                                    <li><a href="#">Live poker rooms</a></li>
+                                    <li><a href="#">Online poker rooms</a></li>
+                                    <li><a href="#">Poker tours</a></li>
+                                    <li><a href="#">Podcasts</a></li>
+                                    <li><a href="#">Videos</a></li>
+                                    <li><a href="#">Promotions</a></li>
+                                    <li><a href="#">Contact</a></li>
                                 </ul>
                             </li>
 
                             <li><router-link :to="{name: 'live-reporting'}">Live reporting</router-link></li>
 
-                            <li><a class="travel" href="news-category3.html">Event calendar</a></li>
+                            <li><a class="travel" href="#">Event calendar</a></li>
 
-                            <li><a class="tech" href="news-category2.html">Rankings & Leaderboards</a></li>
+                            <li><a class="tech" href="#">Rankings & Leaderboards</a></li>
 
-                            <li><a class="fashion" href="news-category6.html">Packages</a></li>
+                            <li><a class="fashion" href="#">Packages</a></li>
 
-                            <li><a class="video" href="video.html">Store</a></li>
+                            <li><a class="video" href="#">Store</a></li>
 
-                            <li><a class="sport" href="news-category5.html">Contact</a></li>
+                            <li><a class="sport" href="#">Contact</a></li>
 
                         </ul>
                     </div>

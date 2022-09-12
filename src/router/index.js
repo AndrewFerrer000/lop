@@ -9,7 +9,12 @@ const routes = [
   {
     path: '/live-reporting',
     name: 'live-reporting',
-    component: () => import(/* webpackChunkName: "about" */ '@/views/livereporting/LivereportingPage.vue')
+    component: () => import(/* webpackChunkName: "about" */ '@/views/livereporting/LivereportingPage.vue'), 
+  },
+  {
+    path: '/main-event-title/sub-event-title',
+    name: 'blog-reports',
+    component: () => import(/* webpackChunkName: "about" */ '@/views/livereporting/BlogReports.vue'),
   }
 ]
 

@@ -1,7 +1,7 @@
 <template>
     <div id="container">
         <HeaderContent />
-        <Highlight />
+        <!-- <Highlight /> -->
         <MainContent />
         <FooterContent />
     </div>
@@ -9,16 +9,16 @@
 
 <script setup>
 import HeaderContent from '@/components/HeaderContent.vue'
-import Highlight from '@/components/Highlight.vue'
+// import Highlight from '@/components/Highlight.vue'
 import MainContent from '@/components/MainContent.vue'
 import FooterContent from '@/components/FooterContent.vue'
 </script>
 
 <style>
     li {
-            list-style: none;
+        list-style: none;
     }
-
+    
     .testimonial-img {
         background-position: center;
         background-size: cover;
@@ -45,9 +45,21 @@ import FooterContent from '@/components/FooterContent.vue'
         z-index: 1;
     }
 
+    .link-header {
+        color: #e74c3c !important;
+    }
+
+    .text-right {
+        text-align: right;
+    }
+
+    .text-center {
+        text-align: center;
+    }
+
 
     .text-primary {
-        color: #e74c3c;
+        color: #e74c3c !important;
     }
 
     .bg-primary {
