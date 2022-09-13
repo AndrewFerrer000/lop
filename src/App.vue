@@ -15,8 +15,34 @@ import FooterContent from '@/components/FooterContent.vue'
 </script>
 
 <style>
+
 div.block-content {
-    padding: 30px 0 0 0;
+    margin: 30px 0 30px 0;
+    padding: unset;
+}
+
+@media (max-width: 768px) { 
+    .hide-on-mobile {
+        display: none;
+    }
+}
+
+@media (max-width: 992px) { 
+    .hide-on-tablet {
+        display: none;
+    }
+}
+
+@media (max-width: 1200px) { 
+    .hide-on-desktop {
+        display: none;
+    }
+}
+
+@media (min-width: 1200px) { 
+    .hide-on-lg-desktop {
+        display: none;
+    }
 }
 
 .bold {
@@ -32,7 +58,7 @@ div.block-content {
 }
 
 .text-primary {
-    color: #e74c3c !important;
+    color: #f44336 !important;
 }
 
 .text-green {
@@ -40,7 +66,7 @@ div.block-content {
 }
 
 .text-red {
-    color: #c0392b;
+    color: red;
 }
 
 .bg-primary {
@@ -78,7 +104,7 @@ li {
 }
 
 .link-header {
-    color: #e74c3c !important;
+    color: #f44336 !important;
 }
 
 #logo {
@@ -88,26 +114,6 @@ li {
 
 .padding-0 {
     padding: 0 !important;
-}
-
-header.second-style .logo-advertisement {
-    background-color: #2D3436 !important;
-}
-
-header.second-style .nav-list-container {
-    background: #2D3436 !important;
-}
-
-.navbar-nav>li>a::before {
-    display: none;
-}
-
-header.second-style .navbar-nav>li:first-child>a::after {
-    display: block;
-}
-
-header.second-style .navbar-nav>li>a:after {
-    display: none;
 }
 
 .grid-box .news-post,
@@ -140,8 +146,8 @@ ul.list-posts>li img {
 
 .bx-wrapper .bx-pager.bx-default-pager a:hover,
 .bx-wrapper .bx-pager.bx-default-pager a.active {
-    border-color: #e74c3c;
-    background: #e74c3c;
+    border-color: #f44336;
+    background: #f44336;
 }
 
 .footer-links a {
@@ -186,36 +192,18 @@ button.social-btn {
 }
 
 @media (max-width: 768px) {
-
-    .tagline,
-    .hide-on-mobile {
-        display: none;
-    }
-
     .highlight {
         transform: scale(0.9);
-    }
-
-    .hide-on-tablet {
-        display: none;
     }
 }
 
 @media (max-width: 992px) {
-    .hide-on-tablet {
-        display: none;
-    }
-
     .unset-padding-bottom {
         padding-bottom: unset;
     }
 }
 
 @media (min-width: 992px) {
-    .hide-on-desktop {
-        display: none;
-    }
-
     .unset-padding-right {
         padding-right: unset;
     }

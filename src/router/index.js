@@ -7,9 +7,9 @@ const routes = [
     component: HomePage
   },
   {
-    path: '/live-reporting',
+    path: '/live-reporting/',
     name: 'live-reporting',
-    component: () => import(/* webpackChunkName: "about" */ '@/views/livereporting/LivereportingPage.vue'), 
+    component: () => import(/* webpackChunkName: "about" */ '@/views/livereporting/LivereportingPage.vue'),
   },
   {
     path: '/main-event-title/sub-event-title',

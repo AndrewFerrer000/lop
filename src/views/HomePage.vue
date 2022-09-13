@@ -19,9 +19,8 @@
                                 <span
                                     style="position: absolute; top: 20px; right: 20px; background-color: white; font-weight: bolder; padding: 8px 16px;">LIVE
                                     NOW</span>
-                                <a href="#" class="play-btn">
-                                    <i style=" position: absolute; top: 50%; left: 50%; transform:
-                                    translate(-50%, -50%); font-size: 50px; color: #e74c3c; z-index: 2;"
+                                 <a href="#" class="play-btn">
+                                    <i style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 50px; color: #f44336; z-index: 2;"
                                         class="fa fa-play-circle" aria-hidden="true"></i>
                                 </a>
                         </div>
@@ -34,7 +33,7 @@
                         <div class="news-post video-post min-h">
                             <img alt="" src="@/assets/images/instagram-img2.jpg"
                                 style="position: relative;  filter: brightness(50%);">
-                            <div class=" hide-on-desktop">
+                            <div class="hide-on-lg-desktop">
                                 <h4 class="fa-bold" style="position: absolute; left: 10px; bottom: 10px; color: white;">
                                     Lights Out!
                                     Jeff Platt
@@ -47,17 +46,17 @@
                                         NOW</span>
 
                                     <a href="#" class="play-btn">
-                                        <i style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 50px; color: #e74c3c; z-index: 2;"
+                                        <i style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 50px; color: #f44336; z-index: 2;"
                                             class="fa fa-play-circle" aria-hidden="true"></i>
                                     </a>
                             </div>
-                            <div class=" hide-on-mobile hide-on-tablet">
+                            <div class="hide-on-desktop">
                                 <span
                                     style="position: absolute; top: 10px; right: 10px; background-color: white; font-weight: bolder; padding: 2px 4px; font-size: smaller;">LIVE
                                     NOW</span>
 
                                 <a href="#" class="play-btn">
-                                    <i style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 50px; color: #e74c3c; z-index: 2;"
+                                    <i style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 50px; color: #f44336; z-index: 2;"
                                         class="fa fa-play-circle" aria-hidden="true"></i>
                                 </a>
                             </div>
@@ -67,29 +66,30 @@
                         <div class="news-post video-post min-h">
                             <img alt="" src="@/assets/images/instagram-img2.jpg"
                                 style="position: relative;  filter: brightness(50%);">
-                            <div class=" hide-on-desktop">
-                                <h4 style="position: absolute; left: 10px; bottom: 10px; color: white;">
+                            <div class="hide-on-lg-desktop">
+                                <h4 class="fa-bold" style="position: absolute; left: 10px; bottom: 10px; color: white;">
                                     Lights Out!
                                     Jeff Platt
                                     Wins MSPT
                                     Venetian Main Event
-                                    ($100,804)</h4>
+                                    ($100,804)
+                                </h4>
                                     <span
                                         style="position: absolute; top: 20px; right: 20px; background-color: white; font-weight: bolder; padding: 8px 16px;">LIVE
                                         NOW</span>
 
                                     <a href="#" class="play-btn">
-                                        <i style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 50px; color: #e74c3c; z-index: 2;"
+                                        <i style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 50px; color: #f44336; z-index: 2;"
                                             class="fa fa-play-circle" aria-hidden="true"></i>
                                     </a>
                             </div>
-                            <div class=" hide-on-mobile hide-on-tablet">
+                            <div class="hide-on-desktop">
                                 <span
                                     style="position: absolute; top: 10px; right: 10px; background-color: white; font-weight: bolder; padding: 2px 4px; font-size: smaller;">LIVE
                                     NOW</span>
 
                                 <a href="#" class="play-btn">
-                                    <i style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 50px; color: #e74c3c; z-index: 2;"
+                                    <i style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 50px; color: #f44336; z-index: 2;"
                                         class="fa fa-play-circle" aria-hidden="true"></i>
                                 </a>
                             </div>
@@ -99,62 +99,65 @@
                 <div class="row">
                     <div class="col-md-6 unset-padding-right">
                         <div class="news-post video-post min-h">
-                            <img alt="" src="@/assets/images/instagram-img3.jpg"
+                            <img alt="" src="@/assets/images/instagram-img2.jpg"
                                 style="position: relative;  filter: brightness(50%);">
-                            <div class=" hide-on-desktop">
-                                <h4 style="position: absolute; left: 10px; bottom: 10px; color: white;">
+                            <div class="hide-on-lg-desktop">
+                                <h4 class="fa-bold" style="position: absolute; left: 10px; bottom: 10px; color: white;">
                                     Lights Out!
                                     Jeff Platt
                                     Wins MSPT
                                     Venetian Main Event
-                                    ($100,804)</h4>
+                                    ($100,804)
+                                </h4>
                                     <span
                                         style="position: absolute; top: 20px; right: 20px; background-color: white; font-weight: bolder; padding: 8px 16px;">LIVE
                                         NOW</span>
 
                                     <a href="#" class="play-btn">
-                                        <i style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 50px; color: #e74c3c; z-index: 2;"
+                                        <i style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 50px; color: #f44336; z-index: 2;"
                                             class="fa fa-play-circle" aria-hidden="true"></i>
                                     </a>
                             </div>
-                            <div class=" hide-on-mobile hide-on-tablet">
+                            <div class="hide-on-desktop">
                                 <span
                                     style="position: absolute; top: 10px; right: 10px; background-color: white; font-weight: bolder; padding: 2px 4px; font-size: smaller;">LIVE
                                     NOW</span>
 
                                 <a href="#" class="play-btn">
-                                    <i style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 50px; color: #e74c3c; z-index: 2;"
+                                    <i style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 50px; color: #f44336; z-index: 2;"
                                         class="fa fa-play-circle" aria-hidden="true"></i>
                                 </a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 unset-padding-right unset-padding-bottom">
+                    <div class="col-md-6 unset-padding-right">
                         <div class="news-post video-post min-h">
-                            <img alt="" src="@/assets/images/instagram-img3.jpg"
+                            <img alt="" src="@/assets/images/instagram-img2.jpg"
                                 style="position: relative;  filter: brightness(50%);">
-                            <div class=" hide-on-desktop">
-                                <h4 style="position: absolute; left: 10px; bottom: 10px; color: white;">
+                            <div class="hide-on-lg-desktop">
+                                <h4 class="fa-bold" style="position: absolute; left: 10px; bottom: 10px; color: white;">
                                     Lights Out!
                                     Jeff Platt
                                     Wins MSPT
                                     Venetian Main Event
-                                    ($100,804)</h4>
+                                    ($100,804)
+                                </h4>
                                     <span
                                         style="position: absolute; top: 20px; right: 20px; background-color: white; font-weight: bolder; padding: 8px 16px;">LIVE
                                         NOW</span>
 
                                     <a href="#" class="play-btn">
-                                        <i style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 50px; color: #e74c3c; z-index: 2;"
+                                        <i style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 50px; color: #f44336; z-index: 2;"
                                             class="fa fa-play-circle" aria-hidden="true"></i>
                                     </a>
                             </div>
-                            <div class=" hide-on-mobile hide-on-tablet">
+                            <div class="hide-on-desktop">
                                 <span
-                                    style="position: absolute; top: 10px; right: 10px; background-color: white; font-weight: bolder; padding: 2px 4px; font-size: smaller;">UPCOMING</span>
+                                    style="position: absolute; top: 10px; right: 10px; background-color: white; font-weight: bolder; padding: 2px 4px; font-size: smaller;">LIVE
+                                    NOW</span>
 
                                 <a href="#" class="play-btn">
-                                    <i style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 50px; color: #e74c3c; z-index: 2;"
+                                    <i style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 50px; color: #f44336; z-index: 2;"
                                         class="fa fa-play-circle" aria-hidden="true"></i>
                                 </a>
                             </div>
@@ -163,8 +166,6 @@
                 </div>
             </div>
         </div>
-
-
         <!-- <div class="news-post very-large-post live-reporting">
             <div class="post-gallery">
                 <ul class="slider-call">
@@ -206,7 +207,6 @@
             </div>
         </div> -->
     </div>
-
     <!-- LATEST NEWS -->
     <div class=" article-box">
 
@@ -322,7 +322,6 @@
             </div>
         </div>
     </div>
-
     <!-- VIDEOS -->
     <div class="article-box">
         <div class="title-section">
@@ -338,7 +337,7 @@
 
                             <!-- PLAY BUTTON -->
                             <div class="play-btn">
-                                <i style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 50px; color: #e74c3c; z-index: 2;"
+                                <i style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 50px; color: #f44336; z-index: 2;"
                                     class="fa fa-play-circle" aria-hidden="true"></i>
                             </div>
                         </a>
@@ -360,7 +359,7 @@
 
                             <!-- PLAY BUTTON -->
                             <div class="play-btn">
-                                <i style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 50px; color: #e74c3c; z-index: 2;"
+                                <i style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 50px; color: #f44336; z-index: 2;"
                                     class="fa fa-play-circle" aria-hidden="true"></i>
                             </div>
                         </a>
@@ -382,7 +381,7 @@
 
                             <!-- PLAY BUTTON -->
                             <div class="play-btn">
-                                <i style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 50px; color: #e74c3c; z-index: 2;"
+                                <i style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 50px; color: #f44336; z-index: 2;"
                                     class="fa fa-play-circle" aria-hidden="true"></i>
                             </div>
                         </a>

@@ -28,4 +28,19 @@
 .c-table tr td {
     padding: 10px 20px;
 }
+
+.c-table tr td img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.c-table tr {
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+}
+
+.c-table tr th {
+    text-transform: capitalize;
+}
 </style>

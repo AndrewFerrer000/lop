@@ -1,7 +1,7 @@
 <template>
     <div class="sidebar">
         <div class="widget tab-posts-widget">
-            <ul class="nav nav-tabs" id="myTab">
+            <ul class="nav nav-tabs">
                 <li class="active">
                     <a href="#live" data-toggle="tab">Live Events</a>
                 </li>
@@ -35,9 +35,9 @@
                             <div class="share-post-box">
                                 <ul class="share-box">
                                     <li><i class="fa fa-share-alt"></i><span>Share Post</span></li>
-                                    <li><a class="facebook" href="#"><i class="fa fa-facebook"></i><span>Share on Facebook</span></a></li>
-                                    <li><a class="twitter" href="#"><i class="fa fa-twitter"></i><span>Share on Twitter</span></a></li>
-                                    <li><a class="facebook" href="#"><i class="fa fa-facebook"></i><span>Share on Whatsapp</span></a></li>
+                                    <li><a class="facebook" href="#"><i class="fa fa-facebook"></i><span>Facebook</span></a></li>
+                                    <li><a class="twitter" href="#"><i class="fa fa-twitter"></i><span>Twitter</span></a></li>
+                                    <li><a class="facebook" href="#"><i class="fa fa-facebook"></i><span>Whatsapp</span></a></li>
                                 </ul>
                             </div>
                             <div class="post-gallery">
@@ -80,24 +80,26 @@
                             <CustomeTable>
                                 <template v-slot:table-head>
                                     <tr class="text-primary">
-                                        <th>PLAYER</th>
-                                        <th class="text-center">FLAG</th>
-                                        <th class="text-right">CHIPS TOTAL</th>
-                                        <th class="text-right">CHIPS PROGRESS</th>
+                                        <th>player</th>
+                                        <th class="text-center hide-on-mobile">flag</th>
+                                        <th class="text-right">total chips</th>
+                                        <th class="text-right">chip progress</th>
                                     </tr>
                                 </template>
                                 <template v-slot:table-body>
                                     <tr>
                                         <td>
-                                            <p>Andrew ”KittyXoXo” Gonder</p>
+                                            <img src="@/assets/images/person3.jpg" ><a class="text-primary" href="#">Andrew ”KittyXoXo” Gonder</a>
                                         </td>
-                                        <td class="text-center">us-flag</td>
+                                        <td class="text-center hide-on-mobile">us-flag</td>
                                         <td class="text-right">4,814,321</td>
                                         <td class="text-right">2,040,123 <i class="text-green fa fa-caret-up" aria-hidden="true"></i></td>
                                     </tr>
                                     <tr>
-                                        <td>Andrew ”KittyXoXo” Gonder</td>
-                                        <td class="text-center">uk-flag</td>
+                                        <td>
+                                            <img src="@/assets/images/person4.jpg" ><a class="text-primary" href="#">Andrew ”KittyXoXo” Gonder</a>
+                                        </td>
+                                        <td class="text-center hide-on-mobile">uk-flag</td>
                                         <td class="text-right">4,814,321</td>
                                         <td class="text-right">2,040,123 <i class="text-red fa fa-caret-down" aria-hidden="true"></i></td>
                                     </tr>
@@ -118,27 +120,27 @@
                         <CustomeTable>
                             <template v-slot:table-head>
                                 <tr class="text-primary">
-                                    <th class="text-center">RANK</th>
-                                    <th>PLAYER</th>
-                                    <th class="text-center">FLAG</th>
-                                    <th class="text-right">CHIPS TOTAL</th>
-                                    <th class="text-right">CHIPS PROGRESS</th>
+                                    <th class="text-center">rank</th>
+                                    <th>player</th>
+                                    <th class="text-center hide-on-mobile">country</th>
+                                    <th class="text-right">total chips</th>
+                                    <th class="text-right hide-on-mobile">chips progress</th>
                                 </tr>
                             </template>
                             <template v-slot:table-body>
                                 <tr>
                                     <td class="text-center">1</td>
                                     <td>Andrew ”KittyXoXo” Gonder</td>
-                                    <td class="text-center">us-flag</td>
+                                    <td class="text-center hide-on-mobile"><i class="flag flag-poland"></i></td>
                                     <td class="text-right">4,814,321</td>
-                                    <td class="text-right">2,040,123 <i class="text-green fa fa-caret-up" aria-hidden="true"></i></td>
+                                    <td class="text-right hide-on-mobile">2,040,123 <i class="text-green fa fa-caret-up" aria-hidden="true"></i></td>
                                 </tr>
                                 <tr>
                                     <td class="text-center">2</td>
                                     <td>Andrew ”KittyXoXo” Gonder</td>
-                                    <td class="text-center">uk-flag</td>
+                                    <td class="text-center hide-on-mobile">uk-flag</td>
                                     <td class="text-right">4,814,321</td>
-                                    <td class="text-right">2,040,123 <i class="text-red fa fa-caret-down" aria-hidden="true"></i></td>
+                                    <td class="text-right hide-on-mobile">- 2,040,123 <i class="text-red fa fa-caret-down" aria-hidden="true"></i></td>
                                 </tr>
                             </template>
                         </CustomeTable>
@@ -146,17 +148,20 @@
                 </div>
 
                 <div class="tab-pane" id="gallery">
-                    <div class="news-post article-post">
-                        <div class="flickr-widget">
-                            <ul class="flickr-list">
-                                <li v-for="index in count = 8" :key="index"><a href="#"><img width="150px" src="@/assets/upload/flickr/1.jpg" alt=""></a></li>
-                            </ul>
-                        </div>
+                    <div class="single-post-box image-gallery">
+                        <img v-for="index in indexes = 20" :key="index" class="galleryImage" src="@/assets/images/person1.jpg">
                     </div>
                 </div>
 
                 <div class="tab-pane" id="videos">
-                    <p>VIDEOS</p>
+                    <div class="single-post-box  news-post article-post">
+                        <div class="news-post article-post">
+                            <div v-for="index in indexes = 15" :key="index" class="news-post video-post">
+                                <img alt="" src="@/assets/upload/news-posts/video1.jpg">
+                                <a href="https://www.youtube.com/watch?v=LL59es7iy8Q" class="video-link"><i class="fa fa-play-circle" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="tab-pane" id="payouts">
@@ -164,9 +169,9 @@
                         <CustomeTable>
                             <template v-slot:table-head>
                                 <tr class="text-primary">
-                                    <th class="text-center">PLACE</th>
-                                    <th>WINNER</th>
-                                    <th class="text-right">PRIZE</th>
+                                    <th class="text-center">place</th>
+                                    <th>winner</th>
+                                    <th class="text-right">prize</th>
                                 </tr>
                             </template>
                             <template v-slot:table-body>
@@ -203,6 +208,91 @@ import CustomeTable from '@/components/CustomeTable.vue'
 </script>
 
 <style scoped>
+ul.share-box {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.sidebar .tab-posts-widget ul.nav-tabs {
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+}
+
+.sidebar .tab-posts-widget ul.nav-tabs li {
+    padding-left: 1px;
+}
+
+@media (max-width: 500px) {
+    .sidebar .tab-posts-widget ul.nav-tabs li a{
+        text-overflow:ellipsis;
+        width: 100px;
+    }
+}
+
+.single-post-box {
+    margin-bottom: unset;
+}
+
+.sidebar .tab-posts-widget .tab-pane {
+    padding-bottom: unset;
+}
+
+.tab-pane .active {
+    padding-top: unset;
+}
+
+.sidebar {
+    padding-bottom: unset;
+}
+
+.article-post {
+    margin-bottom: unset;
+}
+
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    flex-wrap: wrap;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.image-gallery img {
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .image-gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.news-post .article-post {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    flex-wrap: wrap;
+    column-gap: 10px;
+}
+
+@media (max-width: 768px) {
+    .news-post .article-post {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.video-post img {
+    width: 100%;
+}
+
+.video-post .video-link {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #f44336;
+}
 
 .post-gallery {
     padding: 0px 20px;
@@ -243,7 +333,7 @@ import CustomeTable from '@/components/CustomeTable.vue'
 }
 
 .live {
-    color: #e74c3c;
+    color: #f44336;
 }   
 
 .finished {

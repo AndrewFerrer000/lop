@@ -37,7 +37,7 @@
                                 <input style="padding: 13px;" type="text" name="sumbscribe" id="subscribe"
                                     placeholder="Email" />
                                 <button id="submit-subscribe" style="background-color: white;">
-                                    <i class="fa fa-arrow-circle-right" style="color: #e74c3c;"></i>
+                                    <i class="fa fa-arrow-circle-right" style="color: #f44336;"></i>
                                 </button>
                                 <p>Get all latest content delivered to your email a few times a month.</p>
                             </form>

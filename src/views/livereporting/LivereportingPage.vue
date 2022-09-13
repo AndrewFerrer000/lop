@@ -45,7 +45,7 @@ import EventTabs from '@/components/tab/EventTabs';
 }
 
 .live {
-    color: #e74c3c;
+    color: #f44336;
 }   
 
 .finished {

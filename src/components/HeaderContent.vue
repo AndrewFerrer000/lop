@@ -40,7 +40,7 @@
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav navbar-left">
 
-                            <li class="drop"><a class="home" href="#">News & info</a>
+                            <li class="drop"><a class="home" href="#">News & info <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
 
                                 <ul class="dropdown">
                                     <li><a href="#">Live poker rooms</a></li>
@@ -76,3 +76,30 @@
         <!-- End Bootstrap navbar -->
     </header>
 </template>
+
+<style scoped>
+header.second-style .logo-advertisement {
+    background-color: #2D3436 !important;
+}
+
+header.second-style .nav-list-container {
+    background: #2D3436 !important;
+}
+
+.navbar-nav>li>a::before {
+    display: none;
+}
+
+header.second-style .navbar-nav>li>a:after {
+    display: none;
+}
+
+header.second-style .navbar-nav > li > a.router-link-active,
+header.second-style .navbar-nav > li > a.router-link-exact-active {
+    background-color: #f44336 !important;
+}
+
+.navbar-nav > li > a {
+    padding: 20px 12px;
+}
+</style>
